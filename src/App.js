@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+//import './App.css';
+import Hello from './component/Hello';
+import styles from './App.module.css';
+import Name_hook from './component/Name_hook';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.App}>
+
+      <p>Name Hook</p>
+      <Name_hook age={10}/>
+      <Name_hook age={20}/>
+      <Name_hook age={30}/>
+      <p>Hello</p>
+      <Hello />
+      <Hello />
+      <Hello />
+      <Hello />
+        
     </div>
   );
+  // <div className={styles.box}>App</div>
 }
+/* 
+let App = () => {
+  return (
+    <div className="App">
+        <p>Hello</p>
+    </div>
+  );
 
+}
 export default App;
+*/
+/* 
+function App () {
+  return (
+    <div className="App">
+        <p>Hello</p>
+    </div>
+  );
+
+}
+export default App;
+*/
+
+
+
+
+
